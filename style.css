@@ -150,3 +150,45 @@ button:hover {
   background: transparent;
   color: var(--main-color);
 }
+/* about section */
+.about {
+  width: 100%;
+  background: url(./image/bg2.jpg);
+  background-position: center;
+}
+.about-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-img {
+  width: 60%;
+}
+.about-img img {
+  width: 100%;
+}
+.about-text {
+  width: 40%;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.heading p {
+  width: 70px;
+  height: 4px;
+  border-radius: 50px;
+  background: var(--main-color);
+}
+.heading h1 {
+  font-size: 5rem;
+}
+.about-text h2 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.about-text p {
+  font-size: 2rem;
+}
