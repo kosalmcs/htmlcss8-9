@@ -7,9 +7,11 @@
   box-sizing: border-box;
   border: none;
   outline: none;
+  scroll-behavior: smooth;
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 :root {
   --main-color: tomato;
@@ -200,9 +202,15 @@ button:hover {
 .menu {
   width: 100%;
   background: url(./image/bg1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .heading-text {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .heading-text .heading {
   text-align: center;
@@ -227,7 +235,7 @@ button:hover {
 }
 .menu-content .product-box {
   border: 1.5px solid gray;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 9px;
   overflow: hidden;
   position: relative;
@@ -235,14 +243,69 @@ button:hover {
 .menu-content .product-box .product-img {
   width: 100%;
   height: 300px;
-  border-radius: 9px;
   overflow: hidden;
+  border-radius: 9px;
 }
 .menu-content .product-box .product-img img {
   width: 100%;
   height: 100%;
   transition: 0.5s ease-in-out;
 }
-.menu-content .product-box .product-img:hover {
+.menu-content .product-box .product-img:hover img {
   transform: scale(1.2);
+}
+.menu-content .product-box small {
+  font-size: 1.5rem;
+}
+.menu-content .product-box .product-name {
+  font-size: 3.3rem;
+  color: #000;
+}
+.menu-content .product-box .product-description {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+.menu-content .product-box .addtocart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-content .product-box .addtocart .price {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+.menu-content .product-box .addtocart .cart-icon {
+  position: relative;
+}
+.menu-content .product-box .addtocart .cart-icon a {
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  color: #000;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-content .product-box .addtocart .cart-icon .popup {
+  color: var(--white-color);
+  background: #000;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 10px 14px;
+  gap: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.menu-content .product-box .addtocart .cart-icon:hover .popup {
+  opacity: 1;
+  transform: translateY(-50px);
 }
