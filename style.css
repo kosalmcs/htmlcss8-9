@@ -24,7 +24,7 @@ body {
 }
 /* Header */
 header {
-  position: sticky;
+  position: fixed;
   width: 100%;
   display: flex;
   padding: 2rem 7%;
@@ -261,6 +261,9 @@ button:hover {
   font-size: 3.3rem;
   color: #000;
 }
+.menu-content .product-box:hover .product-name {
+  color: var(--main-color);
+}
 .menu-content .product-box .product-description {
   font-size: 1.5rem;
   margin: 2rem 0;
@@ -308,4 +311,19 @@ button:hover {
 .menu-content .product-box .addtocart .cart-icon:hover .popup {
   opacity: 1;
   transform: translateY(-50px);
+}
+.menu-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.menu-page button {
+  border-radius: 6px;
+  padding: 20px;
+  height: 50px;
+}
+.menu-page p {
+  font-size: 22px;
 }
