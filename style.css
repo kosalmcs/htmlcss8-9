@@ -335,7 +335,9 @@ button:hover {
 }
 .gallary-content {
   margin-top: 6rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 .gallary-box {
   width: 100%;
@@ -371,4 +373,26 @@ button:hover {
 }
 .gallary-box:hover .gallary-overlay {
   opacity: 1;
+}
+.gallary-overlay p {
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
+.gallary-overlay a {
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  background: var(--white-color);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  border-radius: 50%;
+  transform: translateY(30px);
+  transition: 0.5s ease-in-out;
+}
+.gallary-box:hover .gallary-overlay a {
+  transform: translateY(-20px);
 }
