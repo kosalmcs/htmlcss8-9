@@ -327,6 +327,7 @@ button:hover {
 .menu-page p {
   font-size: 22px;
 }
+/* Gallary Section */
 .gallary {
   width: 100%;
   background: url(./image/bg2.jpg);
@@ -395,4 +396,60 @@ button:hover {
 }
 .gallary-box:hover .gallary-overlay a {
   transform: translateY(-20px);
+}
+/* Order Section */
+.order {
+  width: 100%;
+  background: url(./image/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.order-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.order-img {
+  width: 45%;
+}
+.order-img img {
+  width: 100%;
+}
+.order-text {
+  width: 55%;
+}
+.order-text h2 {
+  font-size: 5rem;
+}
+.order-text p {
+  font-size: 1.7rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.order-text form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+.order-text form .input-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.3rem;
+}
+.order-text form .input-box input,
+textarea {
+  border: 1.5px solid gray;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  padding: 1.5rem 20px;
+  width: 100%;
+}
+.order-text form button {
+  border-radius: 20px;
 }
