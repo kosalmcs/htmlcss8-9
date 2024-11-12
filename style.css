@@ -522,3 +522,12 @@ textarea {
   background: var(--main-color);
   color: var(--white-color);
 }
+.slider-wrapper .swiper-button-prev,
+.slider-wrapper .swiper-button-next {
+  color: var(--main-color);
+}
+.slider-wrapper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background: var(--main-color);
+}
