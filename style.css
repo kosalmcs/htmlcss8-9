@@ -498,13 +498,13 @@ textarea {
 .slider-list .slider-card p {
   font-size: 1.8rem;
 }
-.slider-list .slider-card .social-media {
+.social-media {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.3rem;
 }
-.slider-list .slider-card .social-media a {
+.social-media a {
   width: 6rem;
   height: 6rem;
   padding: 1rem;
@@ -518,7 +518,7 @@ textarea {
   color: var(--main-color);
   transition: 0.5s;
 }
-.slider-list .slider-card .social-media a:hover {
+.social-media a:hover {
   background: var(--main-color);
   color: var(--white-color);
 }
@@ -530,4 +530,44 @@ textarea {
   width: 20px;
   height: 20px;
   background: var(--main-color);
+}
+/* Contact Us */
+.contact {
+  width: 100%;
+  background: url(./image/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.contact-img {
+  width: 50%;
+  position: relative;
+}
+.contact-img img {
+  width: 100%;
+}
+.contact-text {
+  width: 50%;
+  padding: 3rem;
+}
+.contact-text b {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.contact-text p {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.contact-text p i {
+  color: var(--main-color);
+}
+.contact-text .social-media {
+  display: flex;
+  justify-content: left;
 }
